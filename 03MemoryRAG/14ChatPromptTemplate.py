@@ -1,8 +1,10 @@
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_openai import ChatOpenAI
 import os
 from dotenv import load_dotenv
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.messages import HumanMessage, AIMessage
+from langchain_openai import ChatOpenAI
 
+# 加载项目本地环境变量
 load_dotenv()
 
 llm = ChatOpenAI(
@@ -12,15 +14,24 @@ llm = ChatOpenAI(
     temperature=0.3,
 )
 
-prompt_template = ChatPromptTemplate.from_messages([
-    ("system", "你是客服问题改写助手。请把用户问题改写成适合知识库检索的标准问题，只输出改写后的问题。"),
-    ("human", "用户问题：{question}")
+prompt = ChatPromptTemplate.from_messages([
+    ("system", "你是电商客服助手。请结合历史对话回答用户问题，回答要简洁、准确。"),
+    MessagesPlaceholder("chat_history"),
+    ("human", "{question}")
 ])
 
-chain = prompt_template | llm
+chain = prompt | llm
+
+chat_history = [
+    HumanMessage(content="我申请退款了，订单号是 A1001。"),
+    AIMessage(content="已记录订单号 A1001，请问退款审核是否已经通过？"),
+    HumanMessage(content="已经通过了。"),
+    AIMessage(content="好的，退款通过后通常会原路返回。"),
+]
 
 response = chain.invoke({
-    "question": "我买的东西怎么还没到，物流也不动了？"
+    "chat_history": chat_history,
+    "question": "那一般多久到账？"
 })
 
 print(response.content)
