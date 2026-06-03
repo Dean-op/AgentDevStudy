@@ -16,7 +16,11 @@ chain = prompt | llm
 
 
 def get_session_history(session_id):
-    return FileChatMessageHistory(file_path=f"./chat_history/{session_id}.json")
+    return FileChatMessageHistory(
+        file_path=f"./chat_history/{session_id}.json",
+        encoding="utf-8",
+        ensure_ascii=False,
+    )
 
 
 chain_with_history = RunnableWithMessageHistory(
@@ -38,5 +42,11 @@ response2 = chain_with_history.invoke(
     config=session_config,
 )
 
+response3 = chain_with_history.invoke(
+    {"question": "我问了你几次退款信息了？"},
+    config=session_config,
+)
+
 print(response1.content)
 print(response2.content)
+print(response3.content)
