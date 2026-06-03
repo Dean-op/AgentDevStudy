@@ -1,0 +1,246 @@
+[
+    {
+        "type": "human",
+        "data": {
+            "content": "\u6211\u7533\u8bf7\u9000\u6b3e\u4e86\uff0c\u8ba2\u5355\u53f7\u662f A1001\u3002",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        }
+    },
+    {
+        "type": "ai",
+        "data": {
+            "content": "\u60a8\u597d\uff0c\u5df2\u6536\u5230\u60a8\u7684\u9000\u6b3e\u7533\u8bf7\uff0c\u8ba2\u5355\u53f7 A1001\u3002\u8bf7\u95ee\u60a8\u9700\u8981\u67e5\u8be2\u5f53\u524d\u7684\u9000\u6b3e\u8fdb\u5ea6\uff0c\u8fd8\u662f\u9700\u8981\u5176\u4ed6\u5e2e\u52a9\uff1f",
+            "additional_kwargs": {
+                "refusal": null
+            },
+            "response_metadata": {
+                "token_usage": {
+                    "completion_tokens": 130,
+                    "prompt_tokens": 28,
+                    "total_tokens": 158,
+                    "completion_tokens_details": {
+                        "accepted_prediction_tokens": null,
+                        "audio_tokens": null,
+                        "reasoning_tokens": 102,
+                        "rejected_prediction_tokens": null
+                    },
+                    "prompt_tokens_details": {
+                        "audio_tokens": null,
+                        "cached_tokens": 0
+                    },
+                    "prompt_cache_hit_tokens": 0,
+                    "prompt_cache_miss_tokens": 28
+                },
+                "model_provider": "openai",
+                "model_name": "deepseek-v4-flash",
+                "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+                "id": "fcd58c85-27fd-453f-b2b9-92000053f5a5",
+                "finish_reason": "stop",
+                "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e8c89-77a2-7493-9464-cb755f41224f-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+                "input_tokens": 28,
+                "output_tokens": 130,
+                "total_tokens": 158,
+                "input_token_details": {
+                    "cache_read": 0
+                },
+                "output_token_details": {
+                    "reasoning": 102
+                }
+            }
+        }
+    },
+    {
+        "type": "human",
+        "data": {
+            "content": "\u90a3\u9000\u6b3e\u591a\u4e45\u5230\u8d26\uff1f",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        }
+    },
+    {
+        "type": "ai",
+        "data": {
+            "content": "\u4e00\u822c\u60c5\u51b5\u4e0b\uff0c\u9000\u6b3e\u4f1a\u5728\u63d0\u4ea4\u540e\u76847\u4e2a\u5de5\u4f5c\u65e5\u5185\u5904\u7406\u5b8c\u6bd5\uff0c\u5177\u4f53\u5230\u8d26\u65f6\u95f4\u53d6\u51b3\u4e8e\u60a8\u7684\u652f\u4ed8\u65b9\u5f0f\u3002\u4f8b\u5982\uff0c\u4f7f\u7528\u652f\u4ed8\u5b9d\u6216\u4fe1\u7528\u5361\u53ef\u80fd\u9700\u89812-5\u4e2a\u5de5\u4f5c\u65e5\uff0c\u800c\u94f6\u884c\u8f6c\u8d26\u53ef\u80fd\u7a0d\u957f\u4e00\u4e9b\u3002\u5982\u679c\u8d85\u8fc7\u65f6\u9650\u4ecd\u672a\u5230\u8d26\uff0c\u8bf7\u544a\u8bc9\u6211\uff0c\u6211\u53ef\u4ee5\u5e2e\u60a8\u8fdb\u4e00\u6b65\u67e5\u8be2\u8fdb\u5ea6\u3002",
+            "additional_kwargs": {
+                "refusal": null
+            },
+            "response_metadata": {
+                "token_usage": {
+                    "completion_tokens": 252,
+                    "prompt_tokens": 65,
+                    "total_tokens": 317,
+                    "completion_tokens_details": {
+                        "accepted_prediction_tokens": null,
+                        "audio_tokens": null,
+                        "reasoning_tokens": 192,
+                        "rejected_prediction_tokens": null
+                    },
+                    "prompt_tokens_details": {
+                        "audio_tokens": null,
+                        "cached_tokens": 0
+                    },
+                    "prompt_cache_hit_tokens": 0,
+                    "prompt_cache_miss_tokens": 65
+                },
+                "model_provider": "openai",
+                "model_name": "deepseek-v4-flash",
+                "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+                "id": "e18a7a64-2748-48b3-b4e6-ffe3cba3a834",
+                "finish_reason": "stop",
+                "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e8c89-834e-7261-8da1-1e6ac88b006a-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+                "input_tokens": 65,
+                "output_tokens": 252,
+                "total_tokens": 317,
+                "input_token_details": {
+                    "cache_read": 0
+                },
+                "output_token_details": {
+                    "reasoning": 192
+                }
+            }
+        }
+    },
+    {
+        "type": "human",
+        "data": {
+            "content": "\u6211\u7533\u8bf7\u9000\u6b3e\u4e86\uff0c\u8ba2\u5355\u53f7\u662f A1001\u3002",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        }
+    },
+    {
+        "type": "ai",
+        "data": {
+            "content": "\u597d\u7684\uff0c\u4e86\u89e3\u3002\u8ba2\u5355\u53f7A1001\u7684\u9000\u6b3e\u7533\u8bf7\u5df2\u7ecf\u6536\u5230\u4e86\u3002\u8bf7\u95ee\u60a8\u662f\u60f3\u8981\u67e5\u8be2\u5f53\u524d\u7684\u9000\u6b3e\u8fdb\u5ea6\uff0c\u8fd8\u662f\u9047\u5230\u4e86\u4ec0\u4e48\u95ee\u9898\u9700\u8981\u6211\u5e2e\u52a9\u8ddf\u8fdb\uff1f",
+            "additional_kwargs": {
+                "refusal": null
+            },
+            "response_metadata": {
+                "token_usage": {
+                    "completion_tokens": 288,
+                    "prompt_tokens": 140,
+                    "total_tokens": 428,
+                    "completion_tokens_details": {
+                        "accepted_prediction_tokens": null,
+                        "audio_tokens": null,
+                        "reasoning_tokens": 256,
+                        "rejected_prediction_tokens": null
+                    },
+                    "prompt_tokens_details": {
+                        "audio_tokens": null,
+                        "cached_tokens": 0
+                    },
+                    "prompt_cache_hit_tokens": 0,
+                    "prompt_cache_miss_tokens": 140
+                },
+                "model_provider": "openai",
+                "model_name": "deepseek-v4-flash",
+                "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+                "id": "6911a50d-9c05-49d0-b5e6-6c883442e877",
+                "finish_reason": "stop",
+                "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e8c8c-e021-7e80-8a54-e87eb1b103de-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+                "input_tokens": 140,
+                "output_tokens": 288,
+                "total_tokens": 428,
+                "input_token_details": {
+                    "cache_read": 0
+                },
+                "output_token_details": {
+                    "reasoning": 256
+                }
+            }
+        }
+    },
+    {
+        "type": "human",
+        "data": {
+            "content": "\u90a3\u9000\u6b3e\u591a\u4e45\u5230\u8d26\uff1f",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        }
+    },
+    {
+        "type": "ai",
+        "data": {
+            "content": "\u9000\u6b3e\u901a\u5e38\u4f1a\u5728\u63d0\u4ea4\u540e\u76847\u4e2a\u5de5\u4f5c\u65e5\u5185\u5904\u7406\u5b8c\u6bd5\uff0c\u5177\u4f53\u5230\u8d26\u65f6\u95f4\u53d6\u51b3\u4e8e\u60a8\u7684\u652f\u4ed8\u65b9\u5f0f\uff1a\n\n- \u652f\u4ed8\u5b9d\u6216\u4fe1\u7528\u5361\uff1a\u901a\u5e382-5\u4e2a\u5de5\u4f5c\u65e5\n- \u94f6\u884c\u8f6c\u8d26\uff1a\u53ef\u80fd\u9700\u8981\u66f4\u957f\u65f6\u95f4\n\n\u8bf7\u95ee\u60a8\u7684\u8ba2\u5355\u662f\u901a\u8fc7\u54ea\u79cd\u65b9\u5f0f\u652f\u4ed8\u7684\uff1f\u6211\u53ef\u4ee5\u5e2e\u60a8\u67e5\u8be2\u66f4\u51c6\u786e\u7684\u9884\u8ba1\u5230\u8d26\u65f6\u95f4\u3002\u5982\u679c\u8d85\u8fc7\u65f6\u9650\u4ecd\u672a\u5230\u8d26\uff0c\u6b22\u8fce\u968f\u65f6\u8054\u7cfb\u6211\u3002",
+            "additional_kwargs": {
+                "refusal": null
+            },
+            "response_metadata": {
+                "token_usage": {
+                    "completion_tokens": 255,
+                    "prompt_tokens": 181,
+                    "total_tokens": 436,
+                    "completion_tokens_details": {
+                        "accepted_prediction_tokens": null,
+                        "audio_tokens": null,
+                        "reasoning_tokens": 181,
+                        "rejected_prediction_tokens": null
+                    },
+                    "prompt_tokens_details": {
+                        "audio_tokens": null,
+                        "cached_tokens": 128
+                    },
+                    "prompt_cache_hit_tokens": 128,
+                    "prompt_cache_miss_tokens": 53
+                },
+                "model_provider": "openai",
+                "model_name": "deepseek-v4-flash",
+                "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402",
+                "id": "88be6e54-1c31-473b-97bd-46ce347fea4a",
+                "finish_reason": "stop",
+                "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019e8c8c-f050-71b3-8216-0bc494101880-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+                "input_tokens": 181,
+                "output_tokens": 255,
+                "total_tokens": 436,
+                "input_token_details": {
+                    "cache_read": 128
+                },
+                "output_token_details": {
+                    "reasoning": 181
+                }
+            }
+        }
+    }
+]
