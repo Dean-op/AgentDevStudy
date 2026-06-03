@@ -25,7 +25,7 @@ def get_session_history(session_id):
 
 chain_with_history = RunnableWithMessageHistory(
     chain,
-    get_session_history,
+    get_session_history=get_session_history,
     input_messages_key="question",
     history_messages_key="history",
 )
