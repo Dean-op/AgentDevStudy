@@ -4,7 +4,12 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 # 初始化文本分割器
 # chunk_size=500: 每个分块的最大字符数限制为 500 个字符
 # chunk_overlap=100: 相邻分块之间重叠 100 个字符，防止上下文在切分点被截断导致信息丢失
-splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
+splitter = RecursiveCharacterTextSplitter(
+    chunk_size=500,
+    chunk_overlap=100,
+    separators=["\n\n", "\n", ".", " "],
+    length_function=len,
+)
 
 loader = TextLoader("./docs/text.md", encoding="utf-8")
 # 加载文档，返回一个包含 Document 对象的列表
