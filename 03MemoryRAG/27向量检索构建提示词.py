@@ -1,14 +1,12 @@
 # 导入内存向量库类：将向量数据存储在本地内存中，无需启动外部复杂的数据库，适合快速测试与轻量使用
 from langchain_core.vectorstores import InMemoryVectorStore
-# 导入聊天提示词模板：支持定义 system（系统人设）和 user（人类输入）的格式化模板
 from langchain_core.prompts import ChatPromptTemplate
-# 导入字符串输出解析器：自动将大模型返回的 AIMessage 提取为纯文本字符串
 from langchain_core.output_parsers import StrOutputParser
+
 # 导入共享的大语言模型实例和 Embedding 模型实例
 from llm import llm
 from embeddings import embeddings
 
-# 定义大模型
 model = llm
 
 # 初始化内存向量库实例，传入 Embedding 嵌入模型，用于自动计算后续写入文本的向量
@@ -69,4 +67,3 @@ chain = prompt | print_prompt | model | StrOutputParser()
 # 4. 运行整个链条，传入提问和检索出的参考文档
 res = chain.invoke({"input": input_text, "context": reference_text})
 print(res)
-
