@@ -19,6 +19,8 @@ prompt = ChatPromptTemplate.from_messages(
 
 vector_store = InMemoryVectorStore(embedding=embeddings)
 
+
+# 文本 → embeddings 计算向量 → 存入 vector_store
 vector_store.add_texts(
     [
         "减肥就是少吃多练",
