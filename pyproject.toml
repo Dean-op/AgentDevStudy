@@ -11,4 +11,5 @@ dependencies = [
     "langchain-community>=0.4.2",
     "langchain-openai>=1.2.2",
     "openai>=2.38.0",
+    "streamlit>=1.58.0",
 ]
